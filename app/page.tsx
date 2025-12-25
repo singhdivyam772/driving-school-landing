@@ -28,66 +28,14 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 export default function DrivingSchoolLanding() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="px-4 lg:px-6 h-16 flex border border-blue-500 items-center border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
-        <Link className="flex items-center justify-center" href="/">
-          <div className="relative">
-            <Car className="h-8 w-8 text-blue-600 animate-pulse" />
-            <div className="absolute -top-1 -right-1 w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-bounce"></div>
-          </div>
-          <span className="ml-2 text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            DriveAce Academy
-          </span>
-        </Link>
-        <nav className="ml-auto flex items-center gap-4 sm:gap-6">
-          <Link
-            className="text-sm font-medium hover:text-blue-600 transition-all duration-300 hover:scale-105"
-            href="#about"
-          >
-            About
-          </Link>
-          <Link
-            className="text-sm font-medium hover:text-blue-600 transition-all duration-300 hover:scale-105"
-            href="/plans"
-          >
-            Plans
-          </Link>
-          <Link
-            className="text-sm font-medium hover:text-blue-600 transition-all duration-300 hover:scale-105"
-            href="#testimonials"
-          >
-            Reviews
-          </Link>
-          <Link
-            className="text-sm font-medium hover:text-blue-600 transition-all duration-300 hover:scale-105"
-            href="#contact"
-          >
-            Contact
-          </Link>
-          <Link href="/login">
-            <Button
-              variant="outline"
-              size="sm"
-              className="hover:scale-105 transition-transform duration-200 bg-transparent"
-            >
-              Login
-            </Button>
-          </Link>
-          <Link href="/signup">
-            <Button
-              size="sm"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 hover:scale-105 transition-all duration-200"
-            >
-              Sign Up
-            </Button>
-          </Link>
-        </nav>
-      </header>
-
+      <Header />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
@@ -800,31 +748,7 @@ export default function DrivingSchoolLanding() {
       </main>
 
       {/* Footer */}
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gradient-to-r from-gray-50 to-blue-50/50">
-        <p className="text-xs text-gray-600">
-          © 2024 DriveAce Academy. All rights reserved.
-        </p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link
-            className="text-xs hover:underline underline-offset-4 text-gray-600 hover:text-blue-600 transition-colors duration-200"
-            href="#"
-          >
-            Terms of Service
-          </Link>
-          <Link
-            className="text-xs hover:underline underline-offset-4 text-gray-600 hover:text-blue-600 transition-colors duration-200"
-            href="#"
-          >
-            Privacy Policy
-          </Link>
-          <Link
-            className="text-xs hover:underline underline-offset-4 text-gray-600 hover:text-blue-600 transition-colors duration-200"
-            href="#"
-          >
-            Refund Policy
-          </Link>
-        </nav>
-      </footer>
+      <Footer />
     </div>
   );
 }

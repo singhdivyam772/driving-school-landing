@@ -1,64 +1,33 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Car, CheckCircle, ArrowLeft, Star, Clock, Users, Shield, Award, Target, Zap } from "lucide-react"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  Car,
+  CheckCircle,
+  ArrowLeft,
+  Star,
+  Clock,
+  Users,
+  Shield,
+  Award,
+  Target,
+  Zap,
+} from "lucide-react";
+import Link from "next/link";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export default function PlansPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
-        <Link className="flex items-center justify-center" href="/">
-          <div className="relative">
-            <Car className="h-8 w-8 text-blue-600 animate-pulse" />
-            <div className="absolute -top-1 -right-1 w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-bounce"></div>
-          </div>
-          <span className="ml-2 text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            DriveAce Academy
-          </span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            className="text-sm font-medium hover:text-blue-600 transition-all duration-300 hover:scale-105"
-            href="/#about"
-          >
-            About
-          </Link>
-          <Link className="text-sm font-medium text-blue-600 font-semibold" href="/plans">
-            Plans
-          </Link>
-          <Link
-            className="text-sm font-medium hover:text-blue-600 transition-all duration-300 hover:scale-105"
-            href="/#testimonials"
-          >
-            Reviews
-          </Link>
-          <Link
-            className="text-sm font-medium hover:text-blue-600 transition-all duration-300 hover:scale-105"
-            href="/#contact"
-          >
-            Contact
-          </Link>
-          <Link href="/login">
-            <Button
-              variant="outline"
-              size="sm"
-              className="hover:scale-105 transition-transform duration-200 bg-transparent"
-            >
-              Login
-            </Button>
-          </Link>
-          <Link href="/signup">
-            <Button
-              size="sm"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 hover:scale-105 transition-all duration-200"
-            >
-              Sign Up
-            </Button>
-          </Link>
-        </nav>
-      </header>
+      <Header />
 
       <main className="flex-1">
         {/* Hero Section */}
@@ -82,8 +51,9 @@ export default function PlansPage() {
                   Choose Your Perfect Plan
                 </h1>
                 <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Comprehensive driving packages designed to get you road-ready. All plans include theory preparation,
-                  practical lessons, and ongoing support.
+                  Comprehensive driving packages designed to get you road-ready.
+                  All plans include theory preparation, practical lessons, and
+                  ongoing support.
                 </p>
               </div>
               <div className="flex items-center gap-6 text-sm text-gray-600 animate-fade-in-up delay-200">
@@ -129,7 +99,9 @@ export default function PlansPage() {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-4">
-                    <h4 className="font-semibold text-gray-900">What's Included:</h4>
+                    <h4 className="font-semibold text-gray-900">
+                      What's Included:
+                    </h4>
                     <ul className="space-y-3">
                       <li className="flex items-center gap-3">
                         <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
@@ -154,9 +126,12 @@ export default function PlansPage() {
                     </ul>
                   </div>
                   <div className="pt-4 border-t">
-                    <h4 className="font-semibold text-gray-900 mb-2">Best For:</h4>
+                    <h4 className="font-semibold text-gray-900 mb-2">
+                      Best For:
+                    </h4>
                     <p className="text-gray-600 text-sm">
-                      New drivers who want to learn essential skills and build confidence on the road.
+                      New drivers who want to learn essential skills and build
+                      confidence on the road.
                     </p>
                   </div>
                   <Link href="/plans/basic">
@@ -191,7 +166,9 @@ export default function PlansPage() {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-4">
-                    <h4 className="font-semibold text-gray-900">What's Included:</h4>
+                    <h4 className="font-semibold text-gray-900">
+                      What's Included:
+                    </h4>
                     <ul className="space-y-3">
                       <li className="flex items-center gap-3">
                         <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
@@ -207,7 +184,9 @@ export default function PlansPage() {
                       </li>
                       <li className="flex items-center gap-3">
                         <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                        <span>Advanced Parking Skills (Parallel & Reverse)</span>
+                        <span>
+                          Advanced Parking Skills (Parallel & Reverse)
+                        </span>
                       </li>
                       <li className="flex items-center gap-3">
                         <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
@@ -224,9 +203,12 @@ export default function PlansPage() {
                     </ul>
                   </div>
                   <div className="pt-4 border-t">
-                    <h4 className="font-semibold text-gray-900 mb-2">Best For:</h4>
+                    <h4 className="font-semibold text-gray-900 mb-2">
+                      Best For:
+                    </h4>
                     <p className="text-gray-600 text-sm">
-                      Students who want comprehensive training with personalized attention and convenience features.
+                      Students who want comprehensive training with personalized
+                      attention and convenience features.
                     </p>
                   </div>
                   <Link href="/plans/standard">
@@ -258,7 +240,9 @@ export default function PlansPage() {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-4">
-                    <h4 className="font-semibold text-gray-900">What's Included:</h4>
+                    <h4 className="font-semibold text-gray-900">
+                      What's Included:
+                    </h4>
                     <ul className="space-y-3">
                       <li className="flex items-center gap-3">
                         <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
@@ -270,7 +254,9 @@ export default function PlansPage() {
                       </li>
                       <li className="flex items-center gap-3">
                         <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                        <span>All Driving Environments (City, Highway, Rural)</span>
+                        <span>
+                          All Driving Environments (City, Highway, Rural)
+                        </span>
                       </li>
                       <li className="flex items-center gap-3">
                         <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
@@ -294,15 +280,19 @@ export default function PlansPage() {
                       </li>
                       <li className="flex items-center gap-3">
                         <Zap className="h-5 w-5 text-yellow-500 flex-shrink-0" />
-                        <span className="font-semibold text-green-700">Pass Guarantee or Full Refund</span>
+                        <span className="font-semibold text-green-700">
+                          Pass Guarantee or Full Refund
+                        </span>
                       </li>
                     </ul>
                   </div>
                   <div className="pt-4 border-t">
-                    <h4 className="font-semibold text-gray-900 mb-2">Best For:</h4>
+                    <h4 className="font-semibold text-gray-900 mb-2">
+                      Best For:
+                    </h4>
                     <p className="text-gray-600 text-sm">
-                      Serious learners who want to become expert drivers with comprehensive training and guaranteed
-                      success.
+                      Serious learners who want to become expert drivers with
+                      comprehensive training and guaranteed success.
                     </p>
                   </div>
                   <Link href="/plans/premium">
@@ -324,9 +314,15 @@ export default function PlansPage() {
                   <thead>
                     <tr className="bg-gradient-to-r from-blue-50 to-purple-50">
                       <th className="text-left p-4 font-semibold">Features</th>
-                      <th className="text-center p-4 font-semibold text-blue-600">Basic</th>
-                      <th className="text-center p-4 font-semibold text-purple-600">Standard</th>
-                      <th className="text-center p-4 font-semibold text-green-600">Premium</th>
+                      <th className="text-center p-4 font-semibold text-blue-600">
+                        Basic
+                      </th>
+                      <th className="text-center p-4 font-semibold text-purple-600">
+                        Standard
+                      </th>
+                      <th className="text-center p-4 font-semibold text-green-600">
+                        Premium
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
@@ -392,8 +388,8 @@ export default function PlansPage() {
                   Still Not Sure Which Plan is Right for You?
                 </h3>
                 <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                  Our driving experts are here to help you choose the perfect package based on your experience level,
-                  goals, and schedule.
+                  Our driving experts are here to help you choose the perfect
+                  package based on your experience level, goals, and schedule.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button
@@ -420,29 +416,7 @@ export default function PlansPage() {
       </main>
 
       {/* Footer */}
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gradient-to-r from-gray-50 to-blue-50/50">
-        <p className="text-xs text-gray-600">© 2024 DriveAce Academy. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link
-            className="text-xs hover:underline underline-offset-4 text-gray-600 hover:text-blue-600 transition-colors duration-200"
-            href="#"
-          >
-            Terms of Service
-          </Link>
-          <Link
-            className="text-xs hover:underline underline-offset-4 text-gray-600 hover:text-blue-600 transition-colors duration-200"
-            href="#"
-          >
-            Privacy Policy
-          </Link>
-          <Link
-            className="text-xs hover:underline underline-offset-4 text-gray-600 hover:text-blue-600 transition-colors duration-200"
-            href="#"
-          >
-            Refund Policy
-          </Link>
-        </nav>
-      </footer>
+      <Footer />
     </div>
-  )
+  );
 }
