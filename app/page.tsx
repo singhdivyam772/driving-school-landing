@@ -123,7 +123,7 @@ export default function DrivingSchoolLanding() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center animate-fade-in-up">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl bg-gradient-to-r from-gray-900 to-blue-800 bg-clip-text text-transparent">
-                  Why Choose DriveAce Academy?
+                  Why Choose Rajesh Motor Training School?
                 </h2>
                 <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   We provide comprehensive driving education with modern
@@ -348,7 +348,7 @@ export default function DrivingSchoolLanding() {
                 </h2>
                 <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Real stories from our students who achieved their driving
-                  goals with DriveAce Academy.
+                  goals with Rajesh Motor Training School.
                 </p>
               </div>
             </div>

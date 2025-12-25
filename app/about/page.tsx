@@ -118,7 +118,7 @@ export default function AboutPage() {
                   🎓 Learn Our Story
                 </Badge>
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent">
-                  About DriveAce Academy
+                  About Rajesh Motor Training School
                 </h1>
                 <p className="max-w-[700px] mx-auto text-gray-600 md:text-xl">
                   Transforming lives through professional driving education.
@@ -138,7 +138,7 @@ export default function AboutPage() {
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-xl blur-2xl animate-pulse"></div>
                   <Image
-                    alt="DriveAce Academy modern driving school facility"
+                    alt="Rajesh Motor Training School modern driving school facility"
                     className="aspect-square overflow-hidden rounded-xl object-cover shadow-2xl hover:scale-105 transition-transform duration-500 relative z-10"
                     height={500}
                     src="/modern-driving-school.png"
@@ -307,7 +307,7 @@ export default function AboutPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl bg-gradient-to-r from-gray-900 to-purple-800 bg-clip-text text-transparent">
-                Why Choose DriveAce Academy?
+                Why Choose Rajesh Motor Training School?
               </h2>
               <p className="max-w-[600px] text-gray-600 md:text-lg">
                 What sets us apart from other driving schools

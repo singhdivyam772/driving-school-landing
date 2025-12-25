@@ -43,7 +43,7 @@ const Header = () => {
           <div className="absolute -top-1 -right-1 w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-bounce"></div>
         </div>
         <span className="ml-2 text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          DriveAce Academy
+          Rajesh Motor Training School
         </span>
       </Link>
 

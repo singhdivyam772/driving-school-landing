@@ -48,7 +48,7 @@ const Footer = () => {
                 </svg>
               </div>
               <span className="text-lg font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                DriveAce Academy
+                Rajesh Motor Training School
               </span>
             </div>
             <p className="text-sm text-gray-400">
@@ -159,7 +159,7 @@ const Footer = () => {
 
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-          <p>&copy; 2025 DriveAce Academy. All rights reserved.</p>
+          <p>&copy; 2025 Rajesh Motor Training School. All rights reserved.</p>
           <div className="flex gap-6">
             <Link
               href="#"
